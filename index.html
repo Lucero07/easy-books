@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Easy-Books</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
+
 <body>
-	<div class="row borde">
-		<div class="col s12 m3">
-			<div class="card horizontal">
-				<div class="card-stacked">
-					<div class="card-content">
-						
-							<ol id="book-list">
-							
-							</ol>
-						
-						
-						
-					</div>
-					<div class="card-action">
-						<a href="#">Programación</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	<h1>Easy-Books</h1>
+
+	<input type="text" class="input-number" value="" />
+	<ul class="collapsible popout" data-collapsible="accordion" id="categories">
+      <li>
+        <div class="collapsible-header">Programación</div>
+        <div class="collapsible-body"><ol id="book-list-P"/></div>
+      </li>
+      <li>
+        <div class="collapsible-header">Marketing/Business</div>
+        <div class="collapsible-body"><ol id="book-list-MB"/></div>
+      </li>
+      <li>
+        <div class="collapsible-header">Base de Datos</div>
+        <div class="collapsible-body"><ol id="book-list-BD"/></div>
+      </li>
+    </ul>
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
+
 </html>
